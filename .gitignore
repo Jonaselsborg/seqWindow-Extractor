@@ -159,7 +159,10 @@ fasta/*
 !fasta/.keep
 
 # Ignore the content of the 'input' folder 
-result/*
+input/*
 
 # keep this one too
 !input/.keep
+
+# Always ignore the output folder
+output/

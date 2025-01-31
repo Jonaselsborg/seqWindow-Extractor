@@ -51,7 +51,9 @@ def process_input(input_folder="input", output_folder="output", fasta_folder="fa
         os.makedirs(output_folder)  # Create output folder if it doesn't exist
 
     for input_file in input_files:
-        output_file = os.path.join(output_folder, os.path.basename(input_file))  # Keep same filename
+        output_filename = "result_" + os.path.basename(input_file)
+        output_file = os.path.join(output_folder, output_filename)
+
 
         with open(input_file, "r") as f, open(output_file, "w") as out:
             for line in f:
